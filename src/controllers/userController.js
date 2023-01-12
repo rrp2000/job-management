@@ -4,6 +4,9 @@ const validator = require("../validator/validator");
 const jwt = require("jsonwebtoken");
 
 
+//-------------------------Register-----------------------------
+
+
 const register = async (req, res) => {
   try {
     const userDetails = req.body;
@@ -77,7 +80,13 @@ const register = async (req, res) => {
   }
 };
 
-//login
+
+
+//------------------------------------login-----------------------------------
+
+
+
+
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;

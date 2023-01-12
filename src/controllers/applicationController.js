@@ -6,6 +6,12 @@ const validator = require("../validator/validator");
 
 const markdown = require("markdown").markdown
 
+
+
+//---------------------------------------apply for job--------------------------------
+
+
+
 const apply = async (req, res) => {
   try {
     let jobId = req.params.jobId;

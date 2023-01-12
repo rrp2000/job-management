@@ -3,7 +3,13 @@ const jobModel = require("../models/jobModel");
 const userModel = require("../models/userModel");
 const validator = require("../validator/validator");
 
-//create job
+
+
+
+//-------------------------------------create job-------------------------------
+
+
+
 
 const createJob = async (req, res) => {
   try {
@@ -88,7 +94,12 @@ const createJob = async (req, res) => {
   }
 };
 
-//get jobs
+
+
+//----------------------------------------get jobs---------------------------------------
+
+
+
 const getJobs = async (req, res) => {
   try {
     let query = req.query;
@@ -145,7 +156,13 @@ const getJobs = async (req, res) => {
   }
 };
 
-//get specific job
+
+
+//------------------------------------get specific job--------------------------------------
+
+
+
+
 const getJobById = async (req, res) => {
   try {
     let jobId = req.params.jobId;
